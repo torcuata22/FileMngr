@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container w-50 mt-4">
+    <h1 class="m-5">Directory Images Upload</h1>
+    <p class="m-5">Upload your files using the form provided below.</p>
+            <form method="post" enctype="multipart/form-data">
+                    {%csrf_token%}
+                   
+                    <div class="input-group">
+                        <input
+                          type='file'
+                          name='files'
+                          multiple
+                          class="form-control"
+                          id="inputGroupFile04"
+                          aria-describedby="inputGroupFileAddon04"
+                          aria-label="Upload"
+                        />
+
+                    <button 
+                        class="btn btn-outline-secondary webster-blue text-white"
+                        type="submit"
+                        id="inputGroupFile"
+                    >
+                     Upload
+                    </button>
+                </div>
+            </form>
+        </div>
+{% endblock %}
+
