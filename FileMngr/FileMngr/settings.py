@@ -45,11 +45,9 @@ SECRET_KEY = env('MY_SECRET')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-&8w7+x)x4@&r6%i(9!at&px#^6_zvly$7@0qouj-*y7-jtuwmh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
